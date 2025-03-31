@@ -29,7 +29,7 @@ company = 'Global Mentoring'
 domain = 'com.mx'
 
 # First we change the name to lower case and replace the spaces with dots
-normalized_name = name.lower().replace(' ', '.')
+normalized_name = name.lower().strip().replace(' ', '.')
 
 # Then we remove the spaces in the company name
 normalized_company = company.lower().replace(' ', '')
