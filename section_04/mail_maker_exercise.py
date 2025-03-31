@@ -38,7 +38,7 @@ normalized_company = company.lower().replace(' ', '')
 normalized_domain = '@' + normalized_company + '.' + domain
 
 # Finally we concatenate all the elements and get the final email
-final_email = normalized_name + normalized_domain
+final_email = f'{normalized_name}{normalized_domain}'
 
 # Then proceed to print the result in the format requested
 print("*** Email Generator ***\n")
