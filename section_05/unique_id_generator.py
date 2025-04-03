@@ -36,7 +36,7 @@ birth_date = input("What is your birth date (YYYY)?: ")
 # Process the data received from the prompt
 first_name_data = first_name[:2].upper()
 last_name_data = last_name[:2].upper()
-birth_date_data = birth_date[-2:]
+birth_date_data = birth_date[-2:] # Another option can be [2:] or [2:4]
 # rand_digits = str(randint(0,9))+str(randint(0,9))+str(randint(0,9)) + \
 #               str(randint(0,9))
 rand_digits = str(round(random()*10000)).zfill(4)
